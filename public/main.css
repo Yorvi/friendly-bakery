@@ -1,0 +1,86 @@
+#header {
+  background-color: #F2A297;
+  height: 85px;
+  width: 100%;
+  padding: 10px 10px 10px 0;
+  margin-bottom: 0;
+}
+
+.heading {
+  font-family: 'Pacifico', cursive;
+  color: #CA1444;
+}
+.secondary {
+  font-family: 'Josefin Slab', serif;
+}
+
+.cake-logo {
+  float: left;
+  position: absolute;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  top: 12px;
+  bottom: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  right: 1201.670;
+  left: 200px;
+}
+.main {
+  padding: 7px 0 !important;
+}
+
+#cake-preview {
+  padding: 0 7px; 
+  width: 920px;
+  height: 700px;
+}
+#muffin-preview {
+  padding: 0 7px; 
+  width: 525px;
+  height: 393px;
+  margin-left: 74px;
+}
+#cookie-preview {
+  padding: 0 7px; 
+  width: 525px;
+  height: 302px;
+  margin-left: 74px;
+}
+.secondary-previews {
+  padding: 7px 0 !important;
+  padding-left: 50px; 
+}
+
+body {
+  background-color: #F7DAC3;
+  margin: 0;
+}
+
+.mid {
+  text-align: center;
+}
+.nav {
+  font-size: 30px;
+  padding-top: 10px !important;
+}
+.right-side {
+  float: right;
+}
+
+.left-side {
+  padding-left: 0px;
+  font-size: 40px;
+}
+
+#footer {
+  background-color: #F2A297;
+  /* height: 85px; */
+  width: 100%;
+  padding: 30px 10px 10px 0;
+  margin-bottom: 0;
+}
+
+#main {
+  margin-bottom: 0; 
+}
