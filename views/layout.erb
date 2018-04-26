@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Bakery</title>
+  <title>Mariia's Shop</title>
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="css/ionicons.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
@@ -12,22 +12,20 @@
   <link rel="shortcut icon" href="images/tab-logo.png" />
 </head>
 <body>
-  <div id="header" class="row">
-      <div class="col l2">
-        <a href="/">
-          <div class="heading left-side">Mariia's</div>
-        </a>
+<nav style=" height: 64px; background-color: #F2A297; color: #CA1444; ">
+    <div class="nav-wrapper">
+      <a href="/" class="heading brand-logo" style="
+    padding-left: 20px;">Mariia's</a> <img class="cake-logo" src="https://png.icons8.com/cotton/50/000000/cupcake-with-a-berry.png" >
+
+      <div class="center secondary hide-on-med-and-down">
+        
+        
+        <a class="menu" href="/shop">SHOP</a> &nbsp;&nbsp;&#9830;&nbsp;&nbsp;
+        <a class="menu" href="/about">ABOUT</a> &nbsp;&nbsp;&#9830;&nbsp;&nbsp;
+        <a class="menu" href="/events">EVENTS</a> 
       </div>
-      <img class="cake-logo" src="data:image/png;base64,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">
-      <div class="nav secondary mid col l4 push-l2">
-        <a href="/shop">SHOP |</a>
-        <a href="/about"> ABOUT |</a>
-        <a href="/events"> EVENTS </a>
-      </div>
-      <div class="nav secondary right-side">
-        <a href="/newsletter">newsletter</a>
-      </div>
-  </div>  
+    </div>
+  </nav>
 
   <%= yield %>
 
@@ -36,7 +34,6 @@
       <div class="col l3">
         <ul>
           <li><a href="/"><i class="icon ion-ios-home"> </i>HOME</a></li>
-          <li><a href="/shop"><i class="icon ion-bag"> </i>SHOP</a></li>
           <li><a href="/about"><i class="icon ion-ios-people"> </i>ABOUT</a></li>
           <li><a href="/events"><i class="icon ion-android-calendar"> </i>EVENTS</a></li>
           <li><a href="/newsletter"><i class="icon ion-ios-paper-outline"> </i>NEWSLETTER</a></li>
@@ -58,6 +55,8 @@
         </ul>
       </div>
     </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
   <script src="main.js"></script>
+  
 </body>
 </html>

@@ -8,23 +8,15 @@
 
 .heading {
   font-family: 'Pacifico', cursive;
-  color: #CA1444;
+  color: #CA1444 !important;
 }
 .secondary {
   font-family: 'Josefin Slab', serif;
 }
-
 .cake-logo {
-  float: left;
   position: absolute;
-  padding-bottom: 0px;
-  margin-bottom: 0px;
-  top: 12px;
-  bottom: 0px;
-  margin-right: 0px;
-  padding-right: 0px;
-  right: 1201.670;
-  left: 200px;
+  margin-left: 150px;
+  margin-top: 2px;
 }
 .main {
   padding: 7px 0 !important;
@@ -55,8 +47,8 @@
 body {
   background-color: #F7DAC3;
   margin: 0;
+  font-family: 'Josefin Slab', serif;
 }
-
 .mid {
   text-align: center;
 }
@@ -75,16 +67,51 @@ body {
 
 #footer {
   background-color: #F2A297;
-  /* height: 85px; */
+  color: #CA1444;
+  font-weight: 700;
   width: 100%;
   padding: 30px 10px 10px 0;
   margin-bottom: 0;
 }
 
-#main {
-  margin-bottom: 0; 
+a {
+  color: inherit !important;
 }
 
+#main {
+  margin-bottom: 0;  
+}
+.chef {
+  float: left;
+  width: 300px;
+  height: 370px;
+  border: 2px solid #CA1444;
+  margin-right: 15px;
+}
+.chef2 {
+  float: right;
+  width: 320px;
+  height: 390px;
+  border: 2px solid #CA1444;
+  margin-left: 15px;
+}
+
+.faq {
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+.bold {
+  font-weight: 700;
+}
+.li-para {
+  padding-left: 50px;
+  padding-bottom: 20px; 
+}
 .content {
   padding-left: 100px !important;
+}
+
+.menu {
+  font-size: 25px;
+  color: #CA1444;
 }
