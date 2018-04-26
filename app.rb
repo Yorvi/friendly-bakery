@@ -115,3 +115,29 @@ post "/catalog" do
 
   redirect "/thanks"
 end
+
+
+post "/events" do
+  @email = params[:from]
+  @name = params[:name]
+  @contentt = params[:content]
+  @date = params[:date]
+    from = Email.new(email: @email)
+    to = Email.new(email: ENV["PERSONAL_EMAIL"] )
+    subject = "UPCOMING EVENT: " + @date + " for " + @name
+    content = Content.new(
+      type: "text/plain",
+      value: @content
+    )
+
+# create mail object with from, subject, to and content
+  mail = Mail.new(from, subject, to, content)
+
+# sets up the api key
+  sg = SendGrid::API.new(
+    api_key: ENV["SENDGRID_API_KEY"]
+  )
+  response = sg.client.mail._("send").post(request_body: mail.to_json)
+
+  redirect "/thanks"
+end

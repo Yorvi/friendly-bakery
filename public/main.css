@@ -115,3 +115,12 @@ a {
   font-size: 25px;
   color: #CA1444;
 }
+
+.outline {
+    color: #CA1444 !important;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white; 
+}
