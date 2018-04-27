@@ -59,6 +59,11 @@ get "/thanks" do
   erb :thanks
 end
 
+get "/thanks2" do
+
+  erb :thanks2
+end
+
 post "/catalog" do
 @email = params[:to]
 @name = params[:name]
@@ -122,6 +127,7 @@ post "/events" do
   @name = params[:name]
   @contentt = params[:content]
   @date = params[:date]
+  
     from = Email.new(email: @email)
     to = Email.new(email: ENV["PERSONAL_EMAIL"] )
     subject = "UPCOMING EVENT: " + @date + " for " + @name
@@ -139,5 +145,5 @@ post "/events" do
   )
   response = sg.client.mail._("send").post(request_body: mail.to_json)
 
-  redirect "/thanks"
+  redirect "/thanks2"
 end
